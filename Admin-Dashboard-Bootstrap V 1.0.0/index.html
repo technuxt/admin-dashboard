@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard</title>
+    <!-- Google Fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BootStrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <div class="wrapper">
+      <aside id="sidebar">
+        <!-- Content for sidebar -->
+        <div class="h-100">
+          <div class="sidebar-logo">
+            <img src="./assets/Group_6 1.png" alt="logo">
+          </div>
+          <ul class="sidebar-nav">
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="fas fa-tachometer-alt"></i>Dashboard
+              </a>
+            </li>
+
+            
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="fas fa-receipt"></i>
+                Order
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="fas fa-map-marker-alt"></i>
+
+                Shipping 
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </aside>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main">
+              <nav class="navbar">
+                <div class="row">
+                  <div class="col-lg-9">
+                    <div class="nav-icon" onclick="body.classList.toggle('nav-open')">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+           
+                     </div>
+                  </div>
+                  
+                  <div class="col-lg-3 text-white d-flex d-inline user-info gap-3">
+                    <i class="fa-regular fa-circle-user"></i> 
+                    <p>John Doe </p>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+
+                  <!-- For Drop down -->
+                <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i> User
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+
+                  <!-- End Dropdown  -->
+
+                </div>
+               
+              </nav>
+            </div>
+          </div>
+        </div>
+       <div class="row mt-3 py-4 content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p class="heading">Dashboard</p>
+                    </div>
+                  </div>
+                  <div class="row p-4 gap-5">
+                    <div class="col-lg-3 card">
+                      <div class="row">
+                        <div class="col-lg-7 ">
+                          <h3>20</h3>
+                          <p class="order">Total Orders</p>
+                        </div>
+                        <div class="col-lg-5">
+                          <img class="product" src="./assets/checkout 1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 card">
+                      <div class="row">
+                        <div class="col-lg-7 ">
+                          <h3>8</h3>
+                          <p class="order">Pending Orders</p>
+                        </div>
+                        <div class="col-lg-5">
+                          <img class="product" src="./assets/hourglass.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 card">
+                      <div class="row">
+                        <div class="col-lg-7 ">
+                          <h3>20</h3>
+                          <p class="order">Items Orders</p>
+                        </div>
+                        <div class="col-lg-5">
+                          <img class="product" src="./assets/shopping-bag.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 card">
+                      <div class="row">
+                        <div class="col-lg-7 ">
+                          <h3>152</h3>
+                          <p class="order">Receive Items</p>
+                        </div>
+                        <div class="col-lg-5">
+                          <img class="product" src="./assets/item.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+
+                   
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-11 d-inline d-flex new_order_group p-4">
+                          <img class="new_order" src="./assets/order 1.png" alt="">
+                          <span>|</span>
+                          <span style="font-size: 8px; font-weight: 700;">Start a New Order</span>
+                        </div>
+                      
+                      </div>
+                    </div> 
+                    
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-11 d-inline d-flex new_order_group p-4">
+                          <img class="new_order" src="./assets/destination.png" alt="">
+                          <span>|</span>
+                          <span style="font-size: 8px; font-weight: 700;">Shipping Address</span>
+                        </div>
+                      
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row p-3">
+                    <div class="col-lg-8">
+                     <p>Orders Lists </p> 
+                    </div>
+                    <div class="col-lg-4 d-flex d-inline">
+                      <button class="active">All</button>
+                      <button>Pending</button>
+                      <button>Received</button>
+                      <button>Rejected</button>
+                    </div>
+                   </div>
+                   
+                   <div class="row">
+                    <div class="col-lg-12">
+                      <table>
+                        <tr>
+                          <th>Item Name</th>
+                          <th>Item Code</th>
+                          <th>Shipment Status & Price</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Egg</td>
+                          <td>E-207</td>
+                          <td>On Delivery Way - 270 TK</td>
+                          <td><a href="#" class="view_details">View Details</a></td>
+                        </tr>
+                        
+                      </table>
+                    </div>
+                   </div>
+
+                </div>
+       </div>
+      
+       
+
+           
+      </div>
+     
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
